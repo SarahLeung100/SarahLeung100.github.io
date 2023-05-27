@@ -104,12 +104,6 @@ a:active {
           max-height: 10rem;
           border: 0.5rem solid rgba(255, 255, 255, 0.2);
       }
-
-      #sideNav .navbar-brand .img-initial {
-        max-width: 10rem;
-        max-height: 10rem;
-    }
-
       #sideNav .navbar-collapse {
           display: flex;
           align-items: flex-start;
@@ -228,11 +222,6 @@ a:active {
       background-position: center center;
       background-repeat: no-repeat;
   }
-
-  #about img {
-    max-width: 10rem;
-    max-height: 10rem;
-}
 
   #about h1 {
     /*font-size: 100%;*/
