@@ -64,7 +64,7 @@ a:active {
   }
 
   .list-social-icons a .fa-lg {
-      font-size: 1.75rem;
+      font-size: 1.75rem;r
   }
 
   .list-icons {
@@ -122,6 +122,7 @@ a:active {
       #sideNav .navbar-collapse .navbar-nav .nav-item i{
         color: #f5f5f5; 
         border-color:#f5f5f5;
+        display: block;
     }
     #sideNav .navbar-collapse .navbar-nav .nav-item a:hover{
         color: #ffffff;
