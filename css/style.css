@@ -250,13 +250,13 @@ a:active {
                     COMPETENCIES
 ====================================================*/  
   #competencies {
-    background: #f5f5f5;
+    background: #868e96;
   }
 
   #competencies .card h4{
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: none;
-    color:#555;
+    color:#868e96;
   }
 
   #competencies div li {
@@ -271,6 +271,7 @@ a:active {
 
 #portfolio{
     padding:100px 0;
+    background-color: #868e96;
 } 
 
 .port-head-cont{
@@ -297,7 +298,7 @@ a:active {
 
 #portfolio .portfolio-item  .caption-port {
     position: absolute;
-    width: 370px;
+    width: 365px;
     height: 100%;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
@@ -347,7 +348,7 @@ a:active {
 ======================================================*/
 
 #skills {
-    background-image: url("../img/bg-stats.jpg");
+    background-image: url("../img/bg-skill.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -401,7 +402,11 @@ a:active {
 ======================================================*/
  
 #journey {
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    background-image: url(../img/bg-journey.png); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #award-box {
@@ -619,3 +624,23 @@ a:active {
     }
 }
 
+/*==================================================
+                    INTERESTS
+====================================================*/  
+#interests {
+    background: #868e96;
+    background-image: url("../img/bg-interests2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+#interests h2{
+    color: #b6eac7;
+
+}
+
+#interests li{
+    color:#fff;
+    font-weight: 500;
+}
