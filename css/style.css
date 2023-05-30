@@ -490,6 +490,7 @@ a:active {
     display: block;
     max-width: 400px;
     margin: auto;
+    margin-bottom: 30px;
     padding: auto;
     cursor: pointer;
 }
@@ -526,6 +527,8 @@ a:active {
     #portfolio .portfolio-item {
         margin: auto;
         padding: auto;
+        margin-bottom: 30px;
+
     }
 }
 
