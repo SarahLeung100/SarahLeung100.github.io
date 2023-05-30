@@ -149,7 +149,7 @@ a:active {
     font-size: 1.75rem;
   }
   @media (min-width: 992px) {
-      #sideNav {
+    #sideNav {
           text-align: center;
           position: fixed;
           top: 0;
@@ -263,8 +263,8 @@ a:active {
       min-width: none;
   }
 
-  @media (min-width: 992px) {
-      section.resume-section {
+  @media (min-width: 768px) {
+    section.resume-section {
           min-height: 100vh;
       }
       section.resume-section .resume-item .resume-date {
@@ -273,7 +273,7 @@ a:active {
   }
 
   @media (min-width: 992px) {
-      section.resume-section {
+    section.resume-section {
           padding-top: 3rem !important;
           padding-bottom: 3rem !important;
       }
@@ -395,7 +395,7 @@ a:active {
     /* margin-left: 15px; */
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 767px) {
     #competencies h2 {
       width: auto;
     }
@@ -420,8 +420,8 @@ a:active {
     grid-template-columns: 1fr 6fr;
   }
   
-@media (min-width: 992px) {
-  .partition {
+  @media (min-width: 767px) {
+    .partition {
     flex-direction: row;
   }
 }
@@ -483,14 +483,14 @@ a:active {
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
 }
 
 #portfolio .portfolio-item  {
     position: relative;
     display: block;
     max-width: 400px;
-    margin: 0 auto;
+    margin: auto;
+    padding: auto;
     cursor: pointer;
 }
 
@@ -522,9 +522,10 @@ a:active {
     color: #77A6F7;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin: auto;
+        padding: auto;
     }
 }
 
@@ -753,7 +754,8 @@ a:active {
     text-align: left;
   }
  
-@media (min-width: 992px) {
+  /* for device with screen only, can use @media to test the mobile version on desktop by setting min-width */
+  @media only screen and (max-width: 767px) {
     #timeline {
         padding-left: 20px;
     }
@@ -788,21 +790,25 @@ a:active {
     #timeline .date {
         text-align: left;
         position: absolute;
-        width: 30px;
+        width: 60px;
         top: 0;
-        transform: translateY(-100%); /* Move the date upwards */
+        /* transform: translateY(-100%); Move the date upwards */
       }
 
-      #timeline .timeline:nth-child(2n) .date {
+      #timeline .timeline:nth-child(2n) .timeline-content .date {
+        position: absolute;
+        top: 25px;
         text-align: left;
-        right: auto;
-        left: 0;
-      }
-
-      #timeline .timeline:nth-child(odd) .date {
-        text-align: left;
-        left: auto;
         right: 0;
+        left: -70px;
+      }
+
+      #timeline .timeline:nth-child(odd) .timeline-content .date {
+        position: absolute;
+        top: 25px;
+        text-align: left;
+        right: 0;
+        left: -70px;
       }
 }
 
