@@ -799,6 +799,12 @@ a:active {
         right: auto;
         left: 0;
       }
+
+      #timeline .timeline:nth-child(2n) .date {
+        text-align: left;
+        left: auto;
+        right: 0;
+      }
 }
 
 /*==================================================
