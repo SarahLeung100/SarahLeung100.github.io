@@ -263,7 +263,7 @@ a:active {
       min-width: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
       section.resume-section {
           min-height: 100vh;
       }
@@ -395,7 +395,7 @@ a:active {
     /* margin-left: 15px; */
   }
 
-  @media screen and (max-width: 768px) {
+  @media (min-width: 992px) {
     #competencies h2 {
       width: auto;
     }
@@ -420,7 +420,7 @@ a:active {
     grid-template-columns: 1fr 6fr;
   }
   
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .partition {
     flex-direction: row;
   }
@@ -522,7 +522,7 @@ a:active {
     color: #77A6F7;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
@@ -753,7 +753,7 @@ a:active {
     text-align: left;
   }
  
-@media only screen and (max-width: 767px) {
+@media (min-width: 992px) {
     #timeline {
         padding-left: 20px;
     }
@@ -785,16 +785,13 @@ a:active {
         left: -14%;
     }
 
-    #timeline .timeline:nth-child(odd) .timeline-content .date {
-        right: auto;
-        left: calc(100%);
-        transform: translateY(-100%);
-      }
-
-      #timeline .timeline:nth-child(even) .timeline-content .date {
-        right: calc(100%);
-        left: auto;
-        transform: translateY(-100%);
+    #timeline .date {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: translateY(-100%); /* Move the date upwards */
       }
 }
 
