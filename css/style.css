@@ -590,15 +590,15 @@ a:active {
 }
 
 #portfolio .portfolio-item .caption-port .caption-port-content {
-    font-size: 20px;
-    position: absolute;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
-    top: 40px;
-    left: 30px;
-    text-align: center;
-    justify-content: center;
-    color: #77A6F7;
+  font-size: 20px;
+  position: absolute;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #77A6F7;
 }
 
 @media (max-width: 767px) {
