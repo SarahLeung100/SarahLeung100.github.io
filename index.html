@@ -19,11 +19,13 @@
     <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="lib/animate/animate.css" rel="stylesheet">
+
 </head>
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" >
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none mx-0 px-0"><img src="img/SLmenu.png" alt="" class="img-fluid"></span>
         <span class="d-none d-lg-block">
@@ -41,14 +43,14 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#competencies">Competencies</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#awards">My Journey</a>
+                    <a class="nav-link js-scroll-trigger" href="#timelines">My Journey</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -56,14 +58,14 @@
                 <li  class="nav-item">
                   <a href="https://www.linkedin.com/in/sarah-leung-0483421ab/" target="_empty">
                     <span class="fa-stack fa-lg">
-                      <i class="fa top-social fa-linkedin" style="color: #fff; border-color:#fff;" ></i>
+                      <i class="fa top-social fa-linkedin fa-inverse"></i>
                     </span>
                   </a>
                 </li>
                 <li  class="nav-item">
                   <a href="https://github.com/SarahLeung100" target="_empty">
                     <span class="fa-stack fa-lg">
-                      <i class="fa top-social fa-github" style="color: #fff; border-color:#fff;"></i>
+                      <i class="fa top-social fa-github fa-inverse"></i>
                     </span>
                   </a>
                 </li>
@@ -82,24 +84,25 @@
           <div class="my-auto" >
               <img src="img/SL.png" class="img-fluid mb-3" alt="">
               <h1 class="mb-0">Sarah
-                <span class="text-primary">Leung</span>
+                <span >Leung</span>
               </h1>
-              <div class="subheading mb-5">PROGRAMMER | ACCOUNTANT | TRAVELLER  
-              </div>
+              <div class="subheading mb-5 typed-text-output d-inline font-weight-lighter text-white"></div>
+                    <div class="typed-text d-none">PROGRAMMER , ACCOUNTANT , TRAVELLER</div>
+              <div class="subheading mb-5">             </div>
               <p class="mb-5" style="max-width: 500px;" >I am an enthusiastic analyst and problem solver equally fluent in technology, accounting, finance and business. Raised in HK. Based in UK. A person looking for the next opportunity to make a change and bring products to life.</p>
               <ul class="list-inline list-social-icons mb-0">
                   <li class="list-inline-item">
                       <a href="https://www.linkedin.com/in/sarah-leung-0483421ab/">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse "></i>
                   </span>
                 </a>
                   </li>
                   <li class="list-inline-item">
                       <a href="https://github.com/SarahLeung100">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
@@ -114,13 +117,15 @@
       <section class="resume-section p-3 p-lg-5 " id="competencies">
           <div class="row my-auto">
               <div class="col-12">
-                <h2 class="  text-center">Competencies</h2>
-                <div class="mb-5 heading-border"></div>
-              </div>
-              <div class="resume-item col-md-6 col-sm-12 d-flex align-items-xl-stretch" > 
-                <div class="card mx-0 p-4 mb-5" style="border-color: #A2E4B8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                <h2 class=" text-primary text-center wow zoomIn" data-wow-delay="0.1s"><span>Competencies</span></h2>
+=              </div>
+
+              <div class = "row align-items-xl-stretch ">
+                <div class="col-md-6 col-sm-12">
+                  <div class="resume-item d-flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">                
+                    <div class="card mx-0 p-4 mb-5 bg-secondary text-primary" style="box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important; ">
                   <div class=" resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-puzzle-piece mr-3 text-success"></i> Results-oriented Problem Solver</h4>
+                      <h4 class="mb-3"><i class="fa fa-puzzle-piece mr-3 text-primary"></i> Results-oriented Problem Solver</h4>
                       <p>
                         <li>Streamlined reporting process in department by building macros for team members to consolidate reports. Reduced 15 reports consolidation and boosted score in next employee pulse survey by 9%</li>
                         <li>Dissected the key business drivers from full year raw transaction data from 163,000 active customers in a listed e-Commerce company which was newly transformed from a media company; used outputs as audit evidence for revenue and hence support audit opinion</li>
@@ -131,10 +136,13 @@
                   </div> -->
                 </div>  
               </div>
-              <div class="resume-item col-md-6 col-sm-12 d-flex align-items-xl-stretch">
-                <div class="card mx-0 p-4 mb-5" style="border-color: #87CEEB; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-info"></i>  Experienced Project Manager</h4>
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <div class="resume-item d-flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="card mx-0 p-4 mb-5 bg-secondary text-primary" style="box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important; ">
+                    <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i>  Experienced Project Manager</h4>
                       <p>
                         <li>Managed multi-million-dollar information technology projects by creating key milestones and tracking, including but not limited to core banking system replacement and digital banking revamp </li>
                         <li>Managed strategic projects to optimize organizational structure of overseas branch towards timely delivery and well within allocated budget, increased in operating profit before impairment by 100%</li>
@@ -142,10 +150,15 @@
                   </div>
                 </div>  
               </div>
-              <div class="resume-item col-md-6 col-sm-12 d-flex align-items-xl-stretch">
-                <div class="card mx-0 p-4 mb-5" style="border-color: #A2E4B8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-globe mr-3 text-success"></i> Collaborative Team Player </h4>
+              </div>
+              </div>
+
+              <div class = "row align-items-xl-stretch ">
+              <div class="col-md-6 col-sm-12">
+                <div class="resume-item d-flex wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">                  
+                  <div class="card mx-0 p-4 mb-5 bg-secondary text-primary" style="box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important; ">
+                    <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-globe mr-3 text-primary"></i> Collaborative Team Player </h4>
                       <p>
                         <li>Led a culturally diverse team with 8 members to design application for Metaverse, from requirement engineering, design with UML, modelling, testing, to prototyping, and achieved Distinction grade in module </li>
                         <li>Led 3 members to develop a prototype in an international credit system using Figma and HTML in 24 hours and demonstrate it in front of over 200 people</li>
@@ -154,10 +167,13 @@
                   </div>
                 </div>  
               </div>
-              <div class="resume-item col-md-6 col-sm-12 d-flex align-items-xl-stretch">
-                <div class="card mx-0 p-4 mb-5" style="border-color: #87CEEB; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-file-sound-o mr-3 text-info"></i> Passionate Communicator  </h4>
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <div class="resume-item d-flex wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="card mx-0 p-4 mb-5 bg-secondary text-primary" style="box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important; ">
+                    <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-file-sound-o mr-3 text-primary"></i> Passionate Communicator  </h4>
                       <p>
                         <li>Collaborated with information technology and corporate communications teams at Head Office and overseas branch, for full redesign of website and mobile application after strategic repositioning </li>
                         <li>Collaborated with business, information technology and finance teams at Head Office and overseas branches, to translate technical questions into business analysis and financial budgets for presentation to board of directors and CEO to obtain approval for information technology projects</li>
@@ -165,82 +181,61 @@
                   </div>
                 </div>  
               </div>
-          </div>
-      </section>
-
-    <!--====================================================
-                        SKILLS
-    ======================================================-->       
-    <section class=" d-flex flex-column" id="skills">
-      <div class="p-lg-5 p-3 skill-cover">
-       <h2 class="  text-center">Developer Skills</h2>
-       <div class="mb-5 heading-border"></div>
-       <div class="row text-center my-auto "> 
-           <div class="col-md-3 col-sm-6">
-             <div class="skill-item">
-               <img class="img-fluid" src="img/skill/Figma.png" alt="">
-                 <h2>Figma</h2>
-             </div>
-           </div>
-           <div class="col-md-3 col-sm-6">
-             <div class="skill-item">
-               <img class="img-fluid" src="img/skill/HTML.png" alt="">
-                 <h2>HTML</h2>
-             </div>
-           </div>
-           <div class="col-md-3 col-sm-6">
-             <div class="skill-item">
-               <img class="img-fluid" src="img/skill/CSS.png" alt="">
-                 <h2>CSS</h2>
-             </div>
-           </div>
-           <div class="col-md-3 col-sm-6 align-items-xl-stretch">
-            <div class="skill-item">
-              <img class="img-fluid" src="img/skill/scrum.png" alt="">
-              <h2>Scrum</h2>
+              </div>
             </div>
           </div>
-           <div class="col-md-3 col-sm-6">
-               <div class="skill-item">
-                 <img class="img-fluid" src="img/skill/java.png" alt="">
-                   <h2>Java</h2>
-               </div>
-           </div>
-           <div class="col-md-3 col-sm-6">
-             <div class="skill-item">
-               <img class="img-fluid" src="img/skill/python.png" alt="">
-                 <h2>Python</h2>
-             </div>
-           </div>
-           <div class="col-md-3 col-sm-6">
-               <div class="skill-item">
-                 <img class="img-fluid" src="img/skill/postgreSQL.png" alt="">
-                 <h2>PostgreSQL</h2>
-               </div>
-           </div>
-
-       </div>
-      </div> 
-   </section>
+      </section>
 
  <!--====================================================
                         PORTFOLIO
     ======================================================-->      
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
-          <div class="row my-auto">
-              <div class="col-12">
-                <h2 class="  text-center">Portfolio</h2>
-                <div class="mb-5 heading-border"></div>
-              </div>
-              <div class="col-md-12">
-                <div class="port-head-cont">
-                  <!-- <button class="btn btn-general btn-green filter-b" data-filter="all">All</button> -->
-                </div>
-              </div>
+        <div class="row my-auto">
+          <div class="col-12">
+            <h2 class=" text-secondary text-center wow zoomIn" data-wow-delay="0.1s"><span>Portfolio</span></h2>
           </div>
+          <div class="col-md-12">
+            <!-- <div class="port-head-cont"> -->
+              <!-- <button class="btn btn-general btn-secondary filter-b" data-filter="all">All</button> -->
+            <!-- </div> -->
+          </div>
+      </div>
+        <div class="partition">
+          <div class ="left-skill">
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/Figma.png" alt="">
+              <span class="tooltip">Figma</span>
+            </div>
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/HTML.png" alt="">
+              <span class="tooltip">HTML</span>
+            </div>
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/CSS.png" alt="">
+              <span class="tooltip">CSS</span>
+            </div>
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/java.png" alt="">
+              <span class="tooltip">JAVA</span>
+            </div>
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/python.png" alt="">
+              <span class="tooltip">PYTHON</span>
+            </div>
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/postgreSQL.png" alt="">
+              <span class="tooltip">POSTGRESQL</span>
+            </div>
+            <div class="skill-item">
+              <img class="img-fluid" src="img/skill/scrum.png" alt="">
+              <span class="tooltip">SCRUM</span>
+            </div>
+          </div>
+
+          <div class ="right-project">
           <div class="row my-auto">
-              <div class="col-sm-4 portfolio-item">
-                <a data-toggle="modal">
+              <div class="col-sm-6 portfolio-item">
+                <a data-toggle="modal" class="portfolio-link">
                   <div class="caption-port">
                       <div class="caption-port-content">
                         <div class = "subheading">CreditGo</div>
@@ -251,7 +246,7 @@
               </a>
               </div>
 
-              <div class="col-sm-4 portfolio-item">
+              <div class="col-sm-6 portfolio-item">
                 <a data-toggle="modal">
                   <div class="caption-port">
                       <div class="caption-port-content">
@@ -263,7 +258,7 @@
               </a>
               </div>
               
-              <div class="col-sm-4 portfolio-item">
+              <div class="col-sm-6 portfolio-item">
                 <a data-toggle="modal">
                   <div class="caption-port">
                       <div class="caption-port-content">
@@ -275,7 +270,7 @@
               </a>
               </div>
 
-              <div class="col-sm-4 portfolio-item">
+              <div class="col-sm-6 portfolio-item">
                 <a data-toggle="modal">
                   <div class="caption-port">
                       <div class="caption-port-content">
@@ -287,7 +282,7 @@
               </a>
               </div>
 
-              <div class="col-sm-4 portfolio-item">
+              <!-- <div class="col-sm-4 portfolio-item">
                 <a data-toggle="modal">
                   <div class="caption-port">
                       <div class="caption-port-content">
@@ -297,7 +292,8 @@
                   </div>
                   <img class="img-fluid" src="img/portfolio/p-5.jpg" alt="">
               </a>
-              </div>
+              </div> -->
+          </div>
           </div>
       </section>
 
@@ -307,83 +303,85 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="journey">
           <div class="row my-auto">
               <div class="col-12">
-                <h2 class="  text-center">My Journey</h2>
-                <div class="mb-5 heading-border"></div>
+                <h2 class=" text-center wow zoomIn" data-wow-delay="0.1s"><span>My Journey</span></h2>
               </div> 
-              <div class="main-award" id="award-box">
-                  <div class="award">
-                      <div class="award-icon"></div>
-                      <div class="award-content">
-                          <span class="date">2022 - Present</span>
+              <div class="main-timeline" id="timeline">
+                  <div class="timeline">
+                      <div class="timeline-icon wow slideInLeft" data-wow-delay="0.1s"></div>
+                      <div class="timeline-content wow slideInLeft" data-wow-delay="0.1s">
+                          <div class="date">2022 - Present</div>
                           <h5 class="title">MSc Computer Science</h5>
                           <p class="description">
                             University of Birmingham
                           </p>
-                          <li>All modules completed in Distinction grade up to date </li>
-                          <li>Winner in HacktheMidlands hackathon 7.0, challenge from Capital One - Change Banking for Good</li>
+                          <li class="text-primary">All modules completed in Distinction grade up to date </li>
+                          <li class="text-primary">Winner in HacktheMidlands hackathon 7.0, challenge from Capital One - Change Banking for Good</li>
                       </div>
                   </div>
-                  <div class="award">
-                      <div class="award-icon"></div>
-                      <div class="award-content">
-                          <span class="date">2020 - 2022</span>
+                  <div class="timeline">
+                      <div class="timeline-icon  wow slideInRight" data-wow-delay="0.1s"></div>
+                      <div class="timeline-content wow slideInRight" data-wow-delay="0.1s">
+                          <div class="date">2020 - 2022</div>
                           <h5 class="title">Country Manager for overseas branches</h5>
                           <p class="description">
                             Bank of East Asia
                           </p>
                       </div>
                   </div>
-                  <div class="award">
-                    <div class="award-icon"></div>
-                    <div class="award-content">
-                        <span class="date">2021</span>
+                  <div class="timeline">
+                    <div class="timeline-icon wow slideInLeft" data-wow-delay="0.1s"></div>
+                    <div class="timeline-content wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="date">2021</div>
                         <h5 class="title">Certified Financial Risk Manager</h5>
                         <p class="description">
-                            One take pass
+                            
                         </p>
+                        <li class="text-primary">One take pass </li>
+
                     </div>
                 </div>
-                <div class="award">
-                  <div class="award-icon"></div>
-                  <div class="award-content">
-                      <span class="date">2020</span>
+                <div class="timeline">
+                  <div class="timeline-icon  wow slideInRight" data-wow-delay="0.1s"></div>
+                  <div class="timeline-content wow slideInRight" data-wow-delay="0.1s">
+                      <div class="date">2020</div>
                       <h5 class="title">Chartered Accountant</h5>
                       <p class="description">
-                          One take pass
+                            
                       </p>
+                      <li class="text-primary">One take pass </li>
                   </div>
               </div>
-                  <div class="award">
-                    <div class="award-icon"></div>
-                    <div class="award-content">
-                        <span class="date">2018 - 2020</span>
+                  <div class="timeline">
+                    <div class="timeline-icon wow slideInLeft" data-wow-delay="0.1s"></div>
+                    <div class="timeline-content wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="date">2018 - 2020</div>
                         <h5 class="title">Senior Associate, Financial Services Audit </h5>
                         <p class="description">
                           PricewaterhouseCoopers
                         </p>
                     </div>
                 </div>
-                <div class="award">
-                  <div class="award-icon"></div>
-                  <div class="award-content">
-                      <span class="date">2016 - 2018</span>
+                <div class="timeline">
+                  <div class="timeline-icon  wow slideInRight" data-wow-delay="0.1s"></div>
+                  <div class="timeline-content wow slideInRight" data-wow-delay="0.1s">
+                      <div class="date">2016 - 2018</div>
                       <h5 class="title">Associate, Commercial Practice Audit</h5>
                       <p class="description">
                         KPMG
                       </p>
                   </div>
               </div>
-              <div class="award">
-                <div class="award-icon"></div>
-                <div class="award-content">
-                    <span class="date">2012 - 2016</span>
+              <div class="timeline">
+                <div class="timeline-icon wow slideInLeft" data-wow-delay="0.1s"></div>
+                <div class="timeline-content wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="date">2012 - 2016</div>
                     <h5 class="title">Double Major in Accounting and Finance, First Class Honors</h5>
                     <p class="description">
                       The Hong Kong University of Science and Technology
                     </p>
-                    <li>Scholarship Scheme for Continuing Undergraduate Students</li>
-                    <li>Madam Chiu Chan Kam San Memorial Scholarships</li>
-                    <li>Dean's List</li>
+                    <li class="text-primary">Scholarship Scheme for Continuing Undergraduate Students</li>
+                    <li class="text-primary">Madam Chiu Chan Kam San Memorial Scholarships</li>
+                    <li class="text-primary">Dean's List</li>
                 </div>
             </div>
 
@@ -398,27 +396,26 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
           <div class="row my-auto" > 
             <div class="col-12">
-              <h2 class="  text-center">Interests</h2>
-              <div class="mb-5 heading-border"></div>
+              <h2 class=" text-center wow zoomIn" data-wow-delay="0.1s"><span>Interests </span></h2>
             </div> 
             <ul class="fa-ul mb-0">
               <li>
-                <i class="fa-li fa fa-plane text-success"></i>
+                <i class="fa-li fa fa-plane text-side"></i>
                 Travelling</li>
               <li>
-                <i class="fa-li fa fa-beer text-success"></i>
+                <i class="fa-li fa fa-beer text-side"></i>
                 Great food and drink, always have appetite for desserts</li>
               <li>
-                <i class="fa-li fa fa-soccer-ball-o text-success"></i>
+                <i class="fa-li fa fa-soccer-ball-o text-side"></i>
                 Workout to burn off the above</li>
               <li>
-                <i class="fa-li fa fa-file-movie-o text-success"></i>
+                <i class="fa-li fa fa-file-movie-o text-side"></i>
                 Movies, non-horror please</li>
               <li>
-                <i class="fa-li fa fa-book text-success"></i>
+                <i class="fa-li fa fa-book text-side"></i>
                 Reading</li>
               <li>
-                <i class="fa-li fa fa-music text-success"></i>
+                <i class="fa-li fa fa-music text-side"></i>
                 Music</li>
               <li>
               <li>
@@ -427,6 +424,10 @@
             </ul>
 
 
+    <!-- JavaScript Libraries for animation-->
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/jquery.waypoints.min.js"></script>
 
     <!-- Global javascript -->
     <script src="js/jquery/jquery.min.js"></script>
