@@ -786,12 +786,19 @@ a:active {
     }
 
     #timeline .date {
-        text-align: right;
+        text-align: left;
         position: absolute;
+        width: 50px;
         top: 0;
         right: 0;
         left: 0;
         transform: translateY(-100%); /* Move the date upwards */
+      }
+
+      #timeline .timeline:nth-child(2n) .date {
+        text-align: left;
+        right: auto;
+        left: 0;
       }
 }
 
