@@ -788,9 +788,8 @@ a:active {
     #timeline .date {
         text-align: left;
         position: absolute;
-        width: 50px;
+        width: 30px;
         top: 0;
-        right: auto;
         transform: translateY(-100%); /* Move the date upwards */
       }
 
@@ -802,8 +801,8 @@ a:active {
 
       #timeline .timeline:nth-child(2n) .date {
         text-align: left;
-        left: auto;
-        right: 0;
+        left: -70px;
+        right: auto;
       }
 }
 
