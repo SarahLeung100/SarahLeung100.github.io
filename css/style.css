@@ -469,6 +469,7 @@ a:active {
     display: flex;
     align-items: right;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 
 }
 
