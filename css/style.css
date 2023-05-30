@@ -30,8 +30,16 @@ White ffffff
 
 /*GENERAL STYLE*/
 
+:root{
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 54px;
     color: #ffffff;
 }
@@ -49,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #77A6F7;
@@ -354,6 +362,7 @@ a:active {
     opacity: 0; /* Initially hide the resume-item cards */
     transition: opacity 0.5s ease-in-out;
     height: 100%;
+    border: none;
   }
   
   #competencies .animate-left {
@@ -386,21 +395,85 @@ a:active {
     }
   }
 
-  #competencies h4 {
-    font-size: 22px;
-  }
-  #competencies div li {
-    list-style-position: outside;
-    padding: 5px 0;
-    /* margin-left: 15px; */
-  }
-
   @media (min-width: 767px) {
     #competencies h2 {
       width: auto;
     }
   }
-    
+
+  #competencies h4{
+    color: #ffffff;
+}
+
+#competencies p{
+  color: #77A6F7;
+  margin-bottom: 2px;
+}
+  #competencies .timeline {
+    position: relative;
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+#competencies .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 2px;
+    height: 95%;
+    background-color: #77A6F7;
+}
+
+#competencies .timeline li {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+#competencies .timeline li::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: 3px solid #77A6F7;
+    border-radius: 50%;
+}
+
+#competencies .timeline li .competency-item {
+    width: 100%;
+    padding: 6px 20px;
+    background-color: #77A6F7;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 30px 0 60px 30px;
+    top:10px;
+}
+
+#competencies .timeline li .competency-details {
+    background-color: #ffffff;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* #competencies .timeline li .competency-details small {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+} */
+
+
 
 /*====================================================
                    PORTFOLIO
@@ -498,8 +571,10 @@ a:active {
 
 #portfolio .portfolio-item  .caption-port {
     position: absolute;
-    width: 93%;
-    height: 100%;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
@@ -511,16 +586,18 @@ a:active {
 
 #portfolio .portfolio-item .caption-port:hover {
     opacity: 1;
+
 }
 
 #portfolio .portfolio-item .caption-port .caption-port-content {
     font-size: 20px;
     position: absolute;
-    top: 45%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 40px;
+    left: 30px;
     text-align: center;
+    justify-content: center;
     color: #77A6F7;
 }
 
@@ -744,7 +821,7 @@ a:active {
 #timeline .timeline:nth-child(2n) .timeline-content .date {
     position: absolute;
     top: 15px;
-    right: calc(100% + 80px);
+    right: calc(100% + 90px);
     transform: translateY(0%);
     text-align: right;
 
@@ -753,7 +830,7 @@ a:active {
   #timeline .timeline:nth-child(odd) .timeline-content .date {
     position: absolute;
     top: 15px;
-    left: calc(100% + 80px);
+    left: calc(100% + 90px);
     transform: translateY(0%);
     text-align: left;
   }
@@ -827,7 +904,7 @@ a:active {
     background-repeat: no-repeat; */
   }
 
-  #interests h2 {
+  #interests h2, #interests h5 {
     color: #ffffff;
 }
 
@@ -835,12 +912,28 @@ a:active {
     background-color: #ffffff;
 }
 
-#interests li{
+/* #interests li{
     font-weight: 500;
     font-size: 20px;
     padding-bottom: 20px;
-}
+} */
 
-#interests li i{
-    color: #ffffff;
-}
+#interests .interests-carousel .owl-dots {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  #interests .interests-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #dddddd;
+  }
+  
+  #interests .interests-carousel .owl-dot.active {
+    background: #77A6F7;
+  }
+
+
