@@ -386,12 +386,22 @@ a:active {
     }
   }
 
+  #competencies h4 {
+    font-size: 22px;
+  }
   #competencies div li {
     list-style-position: outside;
     padding: 5px 0;
     /* margin-left: 15px; */
   }
 
+  @media screen and (max-width: 768px) {
+    #competencies h2 {
+      width: auto;
+    }
+  }
+    
+  }
 /*====================================================
                    PORTFOLIO
 ======================================================*/
@@ -537,7 +547,7 @@ a:active {
     content: "";
     width: 1px;
     height: 100%;
-    background: #00887A;
+    background: #77A6F7;
     position: absolute;
     top: 0;
     left: 50%;
@@ -562,10 +572,10 @@ a:active {
     content: "";
     width: 11px;
     height: 11px;
-    background: #00887A;
+    background: #77A6F7;
     box-sizing: content-box;
     border: 5px solid #ffffff;
-    box-shadow: 0 0 0 2px #00887A;
+    box-shadow: 0 0 0 2px #77A6F7;
     position: absolute;
     top: -54px;
     right: -11px;
@@ -587,7 +597,7 @@ a:active {
     width: 24px;
     height: 24px;
     background: #ffffff;
-    border: 1px solid #00887A;
+    border: 1px solid #77A6F7;
     position: absolute;
     top: 17px;
     right: -13px;
@@ -610,7 +620,7 @@ a:active {
 }
 
 #timeline .timeline:hover .timeline-icon:before {
-    background: #00887A;
+    background: #77A6F7;
 }
 
 /* content box */
@@ -637,7 +647,7 @@ a:active {
     width: 14px;
     height: 14px;
     background: #ffffff;
-    border: 1px solid #00887A;
+    border: 1px solid #77A6F7;
     position: absolute;
     top: 21px;
     right: -7.3px;
@@ -646,8 +656,8 @@ a:active {
 }
 
 #timeline .timeline:hover .timeline-content:before {
-    background: #00887A;
-    border-color: #00887A;
+    background: #77A6F7;
+    border-color: #77A6F7;
 }
 
 /* horizontal line connecting 2 nodes  */
@@ -655,7 +665,7 @@ a:active {
     content: "";
     width: 11%;
     height: 1px;
-    background: #00887A;
+    background: #77A6F7;
     position: absolute;
     top: 28px;
     right: -14%;
@@ -666,7 +676,7 @@ a:active {
     display: block;
     font-size: 16px;
     font-weight: 600;
-    color: #00887A;
+    color: #77A6F7;
     margin: 0 0 8px;
     transition: all 0.3s ease 0s;
     width: 150px;
@@ -774,6 +784,18 @@ a:active {
     #timeline .timeline-content:after {
         left: -14%;
     }
+
+    #timeline .timeline:nth-child(odd) .timeline-content .date {
+        right: auto;
+        left: calc(100%);
+        transform: translateY(-100%);
+      }
+
+      #timeline .timeline:nth-child(even) .timeline-content .date {
+        right: calc(100%);
+        left: auto;
+        transform: translateY(-100%);
+      }
 }
 
 /*==================================================
@@ -797,4 +819,10 @@ a:active {
 
 #interests li{
     font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#interests li i{
+    color: #ffffff;
 }
