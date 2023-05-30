@@ -873,6 +873,8 @@ a:active {
         position: absolute;
         width: 60px;
         top: 0;
+        font-size:12px;
+        letter-spacing:0;
         /* transform: translateY(-100%); Move the date upwards */
       }
 
