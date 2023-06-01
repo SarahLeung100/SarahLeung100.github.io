@@ -884,6 +884,7 @@ a:active {
         text-align: left;
         right: 0;
         left: -60px;
+        font-size: smaller;
       }
 
       #timeline .timeline:nth-child(odd) .timeline-content .date {
@@ -891,7 +892,8 @@ a:active {
         top: 25px;
         text-align: left;
         right: 0;
-        left: -70px;
+        left: -60px;
+        font-size: smaller;
       }
 }
 
