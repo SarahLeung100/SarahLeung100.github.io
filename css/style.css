@@ -499,7 +499,11 @@ a:active {
   
   @media (min-width: 767px) {
     .partition {
-    flex-direction: row;
+    flex-direction: column;
+
+    .right-project {
+        margin-top: 20px;
+      }
   }
 }
 #portfolio .left-skill {
