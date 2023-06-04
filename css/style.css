@@ -492,7 +492,7 @@ a:active {
     background-color: #ffffff;
 }
 
-#portfolio .partition {
+/* #portfolio .partition {
     display: grid;
     grid-template-columns: 1fr 6fr;
   }
@@ -505,7 +505,7 @@ a:active {
         margin-top: 20px;
       }
   }
-}
+} */
 #portfolio .left-skill {
     display: flex;
     flex-direction: column;
@@ -555,8 +555,8 @@ a:active {
 }
 
 #portfolio .right-project .row{
-    display: flex;
-    /* display: inline; */
+    /* display: flex; */
+    display: inline;
     align-items: right;
     justify-content: space-evenly;
     margin-bottom: 30px;
@@ -579,6 +579,7 @@ a:active {
     height: 12px;
     border-radius: 10px;
     background: #ffffff;
+    border: 1px solid #ffffff;
   }
   
   .portfolio-carousel .owl-dot.active {
