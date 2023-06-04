@@ -509,6 +509,9 @@ a:active {
 #portfolio .left-skill {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
 #portfolio .left-skill .skill-item{
@@ -516,13 +519,7 @@ a:active {
     width: 60px;
     position: relative;
     margin: bottom 20px;
-    left: 30%;
-}
-
-@media (min-width: 767px) {
-    #portfolio .left-skill .skill-item{
-        left: 50%;
-    }
+    /* left: 30%; */
 }
 
 #portfolio .left-skill .skill-item img{
@@ -584,12 +581,16 @@ a:active {
     width: 12px;
     height: 12px;
     border-radius: 10px;
-    background: #ffffff;
+    background-color: #ffffff;
     border: 1px solid #ffffff;
   }
   
   .portfolio-carousel .owl-dot.active {
     background: #00887A;
+  }
+
+  .portfolio-carousel .owl-dot:not(.active) {
+    background-color: #ffffff; 
   }
 
 /* Filter grid style  */
@@ -987,4 +988,8 @@ a:active {
   
   .interest-carousel .owl-dot.active {
     background: #00887A;
+  }
+
+  .interest-carousel .owl-dot:not(.active) {
+    background-color: #ffffff; 
   }
