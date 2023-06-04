@@ -1,6 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -20,6 +21,23 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  // #Portfolio & #Interests carousel (Clash with scrollspy)
+  $('.portfolio-carousel').owlCarousel({
+    autoplay: true,
+    smartSpeed: 1500,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+  $('.interest-carousel').owlCarousel({
+    autoplay: true,
+    smartSpeed: 1500,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#sideNav'
@@ -27,83 +45,104 @@
 
 
   document.addEventListener('DOMContentLoaded', function() {
-  // Get all resume-item elements
-  var resumeItems = document.querySelectorAll('.resume-item');
-  
-  // Calculate the offset position of each resume-item element
-  var offsetPositions = Array.from(resumeItems).map(function(item) {
-    return item.offsetTop - window.innerHeight;
-  });
-  
-  // Function to handle scroll event
-  function handleScroll() {
-    var scrollPosition = window.scrollY;
+    // Get all resume-item elements
+    var resumeItems = document.querySelectorAll('.resume-item');
     
-    // Add appropriate animation class to each resume-item based on scroll position
-    Array.from(resumeItems).forEach(function(item, index) {
-      if (scrollPosition >= offsetPositions[index]) {
-        if (index % 2 === 0) {
-          item.classList.add('animate-left');
-        } else {
-          item.classList.add('animate-right');
+    // Calculate the offset position of each resume-item element
+    var offsetPositions = Array.from(resumeItems).map(function(item) {
+      return item.offsetTop - window.innerHeight;
+    });
+    
+    // Function to handle scroll event
+    function handleScroll() {
+      var scrollPosition = window.scrollY;
+      
+      // Add appropriate animation class to each resume-item based on scroll position
+      Array.from(resumeItems).forEach(function(item, index) {
+        if (scrollPosition >= offsetPositions[index]) {
+          if (index % 2 === 0) {
+            item.classList.add('animate-left');
+          } else {
+            item.classList.add('animate-right');
+          }
         }
-      }
+      });
+    }
+    
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Trigger the initial animation if elements are already in the viewport on page load
+    handleScroll();
+  });
+
+
+  //Add animation to #ABOUT section typed-text
+  // Typed Initiate
+  if ($('.typed-text-output').length == 1) {
+    var typed_strings = $('.typed-text').text();
+    var typed = new Typed('.typed-text-output', {
+        strings: typed_strings.split(', '),
+        typeSpeed: 100,
+        backSpeed: 20,
+        smartBackspace: false,
+        loop: true
     });
   }
-  
-  // Attach scroll event listener
-  window.addEventListener('scroll', handleScroll);
-  
-  // Trigger the initial animation if elements are already in the viewport on page load
-  handleScroll();
-});
 
 
-//Add animation to #ABOUT section typed-text
-    // Typed Initiate
-    if ($('.typed-text-output').length == 1) {
-      var typed_strings = $('.typed-text').text();
-      var typed = new Typed('.typed-text-output', {
-          strings: typed_strings.split(', '),
-          typeSpeed: 100,
-          backSpeed: 20,
-          smartBackspace: false,
-          loop: true
-      });
-  }
+  //Add animation to the #COMPENTENCIES and #JOURNEY section using wow and waypoints libraries
+  // Initialize WOW
+  new WOW().init();
 
-
-//Add animation to the #COMPENTENCIES and #JOURNEY section using wow and waypoints libraries
-// Initialize WOW
-new WOW().init();
-
-// Initialize Waypoints
-var waypoint = new Waypoint({
-  element: document.querySelector('.wow'),
-  handler: function() {
-    // Add the 'animated' class to trigger the WOW animation
-    this.element.classList.add('animated');
-  },
-  offset: '75%' // Adjust the offset as needed
-});
-
-//Toggle the #Portfolio items on click
-$(document).ready(function() {
-  $('.portfolio-link').click(function(e) {
-    e.preventDefault();
-    var $caption = $(this).find('.caption-port');
-    $caption.toggleClass('active');
+  // Initialize Waypoints
+  var waypoint = new Waypoint({
+    element: document.querySelector('.wow'),
+    handler: function() {
+      // Add the 'animated' class to trigger the WOW animation
+      this.element.classList.add('animated');
+    },
+    offset: '75%' // Adjust the offset as needed
   });
-});
 
-// Interests carousel
-$(".interests-carousel").owlCarousel({
-  autoplay: true,
-  smartSpeed: 1500,
-  dots: true,
-  loop: true,
-  items: 1
-});
+  //Toggle the #Portfolio items on click
+  $(document).ready(function() {
+    $('.portfolio-link').click(function(e) {
+      e.preventDefault();
+      var $caption = $(this).find('.caption-port');
+      $caption.toggleClass('active');
+    });
+  });
 
+  // //Filter the #Portfolio items on click
+  // $(document).ready(function(){
+
+  //   $(".filter-b").click(function(){
+  //       var value = $(this).attr('data-filter');
+  //       if(value == "all")
+  //       { 
+  //           $('.filter').show('1000');
+  //       }
+  //       else
+  //       { 
+  //           $(".filter").not('.'+value).hide('3000');
+  //           $('.filter').filter('.'+value).show('3000');
+  //       }
+  //   });
+    
+  //   if ($(".filter-b").removeClass("active")) {
+  //     $(this).removeClass("active");
+  //   }
+  //   $(this).addClass("active");
+  //   });
+
+  //   // SKILLS
+  //   $(function () {
+  //       $('.counter').counterUp({
+  //           delay: 10,
+  //           time: 2000
+  //       });
+
+  //   });
 
 })(jQuery); // End of use strict

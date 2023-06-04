@@ -30,14 +30,6 @@ White ffffff
 
 /*GENERAL STYLE*/
 
-:root{
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     padding-top: 54px;
@@ -52,16 +44,24 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: 'Lora', serif;
     font-weight: 700;
+    text-transform: capitalize;
+    color: #77A6F7;
+}
+
+/* For Section Header  */
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
     text-transform: uppercase;
     color: #77A6F7;
 }
+
 
 h1 {
     font-size: 6rem;
@@ -401,10 +401,6 @@ a:active {
     }
   }
 
-  #competencies h4{
-    color: #ffffff;
-}
-
 #competencies p{
   color: #77A6F7;
   margin-bottom: 2px;
@@ -416,7 +412,7 @@ a:active {
     padding-left: 0;
     width: 100%;
 }
-
+/* Vertical line */
 #competencies .timeline::before {
     content: '';
     position: absolute;
@@ -433,7 +429,7 @@ a:active {
     position: relative;
     display: block;
     padding-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #competencies .timeline li::before {
@@ -447,21 +443,29 @@ a:active {
     border: 3px solid #77A6F7;
     border-radius: 50%;
 }
-
+/* Header */
 #competencies .timeline li .competency-item {
     width: 100%;
-    padding: 6px 20px;
+    padding: 0px 20px;
     background-color: #77A6F7;
     color: #ffffff;
+    /* border: 1px solid #77A6F7; */
+    /* box-shadow: 1px 1px 1px 1px #77A6F7; */
     font-weight: 500;
-    border-radius: 30px 0 60px 30px;
+    /* border-radius: 30px 30px 30px 30px; */
+    border-radius: 30px 0px 60px 30px;
     top:10px;
 }
 
+#competencies .timeline li h3{
+    color: #ffffff;
+}
+
+/* Content */
 #competencies .timeline li .competency-details {
     background-color: #ffffff;
     margin-top: 0px;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 4px;
 }
 
@@ -507,7 +511,8 @@ a:active {
     height: 60px;
     width: 60px;
     position: relative;
-    margin: bottom 20px;;
+    margin: bottom 20px;
+    left: 30%;
 }
 
 #portfolio .left-skill .skill-item img{
@@ -538,15 +543,40 @@ a:active {
     opacity: 1;
 }
 
-#portfolio .right-project .row{
-    display: flex;
-    align-items: right;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
 
+#portfolio .right-project .row{
+    /* display: flex; */
+    display: inline;
+    /* align-items: right;
+    justify-content: space-evenly;
+    margin-bottom: 30px; */
 }
 
-.port-head-cont{
+#portfolio .right-project .row .h3{
+    color: #ffffff;
+}
+
+.portfolio-carousel .owl-dots {
+    margin-top: 25px;
+    text-align: center;
+
+  }
+  
+  .portfolio-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .portfolio-carousel .owl-dot.active {
+    background: #00887A;
+  }
+
+/* Filter grid style  */
+/* .port-head-cont{
     margin:20px auto 40px auto;
     text-align: center;
 }
@@ -606,7 +636,7 @@ a:active {
   text-align: center;
   color: #77A6F7;
 }
-
+*/
 @media (max-width: 767px) {
     #portfolio .portfolio-item {
         margin: auto;
@@ -909,42 +939,33 @@ a:active {
 ====================================================*/  
 #interests {
     background: #77A6F7;
-    /* background-image: url("../img/bg-interests2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
   }
 
-  #interests h2, #interests h5 {
+  #interests h2, #interests h3 {
     color: #ffffff;
 }
 
   #interests h2 span:before, #interests h2 span:after {
     background-color: #ffffff;
 }
-
-/* #interests li{
-    font-weight: 500;
-    font-size: 20px;
-    padding-bottom: 20px;
-} */
-
-#interests .interests-carousel .owl-dots {
+  
+  #interests1 .container .row {
+    display: inline;
+}
+.interest-carousel .owl-dots {
     margin-top: 25px;
     text-align: center;
   }
   
-  #interests .interests-carousel .owl-dot {
+  .interest-carousel .owl-dot {
     display: inline-block;
     margin: 0 5px;
     width: 12px;
     height: 12px;
     border-radius: 10px;
-    background: #dddddd;
+    background: #ffffff;
   }
   
-  #interests .interests-carousel .owl-dot.active {
-    background: #77A6F7;
+  .interest-carousel .owl-dot.active {
+    background: #00887A;
   }
-
-
