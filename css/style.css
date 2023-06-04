@@ -581,7 +581,7 @@ a:active {
     width: 12px;
     height: 12px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #ffffff  !important;
     border: 1px solid #ffffff;
   }
   
@@ -590,7 +590,7 @@ a:active {
   }
 
   .portfolio-carousel .owl-dot:not(.active) {
-    background-color: #ffffff; 
+    background-color: #ffffff  !important; 
   }
 
 /* Filter grid style  */
@@ -981,7 +981,7 @@ a:active {
     width: 12px;
     height: 12px;
     border-radius: 10px;
-    background: #ffffff;
+    background: #ffffff  !important;
     color: #ffffff;
     border-color: #ffffff;
   }
@@ -991,5 +991,5 @@ a:active {
   }
 
   .interest-carousel .owl-dot:not(.active) {
-    background-color: #ffffff; 
+    background-color: #ffffff  !important; 
   }
