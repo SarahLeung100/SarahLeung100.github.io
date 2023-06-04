@@ -637,14 +637,14 @@ a:active {
   color: #77A6F7;
 }
 */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     #portfolio .portfolio-item {
         margin: auto;
         padding: auto;
         margin-bottom: 30px;
 
     }
-}
+} */
 
 /*====================================================
                       JOURNEY
