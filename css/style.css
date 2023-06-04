@@ -551,11 +551,11 @@ a:active {
 }
 
 #portfolio .right-project .row{
-    /* display: flex; */
-    display: inline;
-    /* align-items: right;
+    display: flex;
+    /* display: inline; */
+    align-items: right;
     justify-content: space-evenly;
-    margin-bottom: 30px; */
+    margin-bottom: 30px;
 }
 
 #portfolio .right-project .row .h3{
@@ -970,6 +970,8 @@ a:active {
     height: 12px;
     border-radius: 10px;
     background: #ffffff;
+    color: #ffffff;
+    border-color: #ffffff;
   }
   
   .interest-carousel .owl-dot.active {
