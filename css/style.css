@@ -519,6 +519,12 @@ a:active {
     left: 30%;
 }
 
+@media (min-width: 767px) {
+    #portfolio .left-skill .skill-item{
+        left: 50%;
+    }
+}
+
 #portfolio .left-skill .skill-item img{
     height: 50px;
     width: 50px;
