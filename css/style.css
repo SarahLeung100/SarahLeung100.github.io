@@ -582,15 +582,14 @@ a:active {
     height: 12px;
     border-radius: 10px;
     background-color: #ffffff  !important;
-    border: 1px solid #ffffff;
   }
   
   .portfolio-carousel .owl-dot.active {
-    background: #00887A;
+    background: #00887A !important;
   }
 
   .portfolio-carousel .owl-dot:not(.active) {
-    background-color: #ffffff  !important; 
+    background-color: #ffffff  ; 
   }
 
 /* Filter grid style  */
