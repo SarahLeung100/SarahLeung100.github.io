@@ -985,7 +985,7 @@ a:active {
   }
   
   .interest-carousel .owl-dot.active {
-    background: #00887A;
+    background: #00887A !important;
   }
 
   .interest-carousel .owl-dot:not(.active) {
